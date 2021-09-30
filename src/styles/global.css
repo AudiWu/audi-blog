@@ -1,5 +1,23 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
   margin: 0;
   padding: 0;
-  background-color: aqua;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+html body {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+body {
+  background-color: #14171A;
+}
+
+p {
+  color: whitesmoke;
 }
