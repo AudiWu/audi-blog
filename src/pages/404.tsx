@@ -7,9 +7,7 @@ const CustomText = styled.p`
 `;
 
 const Error: React.FC = () => (
-  <>
-    <CustomText>Error Page</CustomText>
-  </>
+  <CustomText>Error Page</CustomText>
 );
 
 export default Error;

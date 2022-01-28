@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Navbar, Logo, Menu } from './style';
+import { Navbar, Logo, Menu } from './styles';
 
 export const Header: React.FC<{}> = () => (
   <Navbar>
@@ -8,7 +8,6 @@ export const Header: React.FC<{}> = () => (
     <Menu>
       <ul>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/About">About</Link></li>
         <li><Link to="/Projects">Projects</Link></li>
         <li><a href="#">Contact</a></li>
       </ul>

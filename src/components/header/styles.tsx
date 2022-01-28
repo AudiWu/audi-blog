@@ -5,14 +5,13 @@ import { media } from "../../helpers/media";
 const Navbar = styled.nav`
     width: 100%;
     height: 65px;
+    padding: 0 6%;
     position: fixed;
     line-height: 65px;
     text-align: center;
 `;
 
 const Logo = styled.div`
-    width: 180px;
-    height: 10px;
     position: absolute;
     color: ${Color.WHITE};
 `;
@@ -26,10 +25,12 @@ const Menu = styled.div`
         width:100%;
         height: 65px;
         display: flex;
+        flex-direction: row;
+        justify-content: flex-end; 
         list-style: none;
 
         li {
-            width: 120px;
+            width: 100px;
             height: 65px;
 
             a {
