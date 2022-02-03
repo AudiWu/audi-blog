@@ -7,7 +7,7 @@ import { useLoader } from "@react-three/fiber"
 export const Model: React.FC<{}> = () => {
   const obj = useLoader(OBJLoader, "/pigeon.obj");
   
-  obj.translateY(-1.3);
+  obj.translateY(-1.4);
   useFrame(() => (obj.rotation.y += 0.01))
 
   return <primitive object={obj} scale={0.8} />
