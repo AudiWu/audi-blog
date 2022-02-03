@@ -42,8 +42,8 @@ const data = {
 
 export const Skill: React.FC<{}> = () => (
   <SkillWrapper>
-    {data.skills.map((skill) => (
-      <Progress title={skill.title} value={skill.value} color={skill.color} />
+    {data.skills.map((skill, index) => (
+      <Progress key={index} title={skill.title} value={skill.value} color={skill.color} />
     ))}
   </SkillWrapper>
 )

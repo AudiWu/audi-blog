@@ -1,12 +1,18 @@
-import React from "react"
-import { AboutContainer, Model, ModelAndSkill } from "./styles"
+import React, { Suspense } from "react"
+import { Canvas } from "@react-three/fiber";
+import { AboutContainer, ModelAndSkill } from "./styles"
 import { Biography } from "./biography"
+import { Model } from "./model"
 import { Skill } from "./skill"
 
 export const About: React.FC<{}> = () => (
   <AboutContainer>
     <ModelAndSkill>
-      <Model />
+      <Canvas>
+        <Suspense fallback={null}>
+          <Model />
+        </Suspense>
+      </Canvas>
       <Skill />
     </ModelAndSkill>
     <Biography />

@@ -22,19 +22,10 @@ export const AboutContainer = styled.div`
   ${media.mobile`
     width: 100%;
     height: 100%;
-    padding: 2% 3%;
+    padding: 2% 3% 4%;
   `}
 `
 
-export const Model = styled.div`
-  border-radius: 10px;
-  background-color: ${Color.MINE_SHAFT};
-
-  ${media.mobile`
-    width: 100%;
-    height: 100px;
-  `}
-`;
 
 export const ModelAndSkill = styled.div`
   display: grid;
