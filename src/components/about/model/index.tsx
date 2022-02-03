@@ -5,10 +5,7 @@ import { MTLLoader } from "three/examples/jsm/loaders/MTLLoader"
 import { useLoader } from "@react-three/fiber"
 
 export const Model: React.FC<{}> = () => {
-  const materials = useLoader(MTLLoader, "/pigeon.mtl");
-  const obj = useLoader(OBJLoader, "/pigeon.obj", () => {
-    materials.preload();
-  });
+  const obj = useLoader(OBJLoader, "/pigeon.obj");
   
   obj.translateY(-1.2);
   useFrame(() => (obj.rotation.y += 0.01))
