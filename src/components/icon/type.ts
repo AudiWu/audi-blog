@@ -12,7 +12,7 @@ export type WrapperProps = {
 export type IconProps = {
   attachLink?: string;
   color?: string;
-  name: IconName;
+  name: IconName | string;
   onClick?: any;
   size?: number | string;
   className?: string;

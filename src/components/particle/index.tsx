@@ -7,7 +7,7 @@ export const Particle: React.FC<{}> = () => {
       params={{
         particles: {
           number: {
-            value: 250,
+            value: 500,
             density: {
               enable: true,
               value_area: 1500,

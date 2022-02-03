@@ -16,6 +16,7 @@ export const ProfileContainer = styled.div`
   align-items: center;
   overflow: hidden;
 
+
   ${media.tablet`
     width: 40%;
   `}
@@ -31,6 +32,7 @@ export const ProfilePhoto = styled.img`
   height: 280px;
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
+  z-index: 9999;
 
   ${media.tablet`
     height: 250px;

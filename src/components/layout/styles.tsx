@@ -9,10 +9,14 @@ export const LayoutWrapper = styled.div`
 
 export const Content = styled.div`
   width: 100%;
-  padding: 7% 6% 5%;
+  padding: 7% 6% 2%;
   display: flex;
   flex-direction: row;
   gap: 40px;
+
+  ${media.tablet`
+    padding: 7% 5% 5%;
+  `}
 
   ${media.mobile`
     padding: 20% 6% 5%;
