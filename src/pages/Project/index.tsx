@@ -1,10 +1,10 @@
 import React from "react";
 import { Layout } from "../../components/layout";
 
-const Index: React.FC = () => (
+const Project: React.FC = () => (
   <Layout>
-    <p> This is project page.</p>
+    <p>This is Project Page</p>
   </Layout>
 );
 
-export default Index;
+export default Project;

@@ -16,6 +16,7 @@ export const Content = styled.div`
 
   ${media.tablet`
     padding: 7% 5% 5%;
+    gap: 30px;
   `}
 
   ${media.mobile`

@@ -20,14 +20,14 @@ export const Title = styled.div`
 `
 
 export const BarContainer = styled.div`
-  height: 20px;
+  height:  ${pxToRem(20)};
   width: 100%;
   background-color: #e0e0de;
   border-radius: 50px;
 `
 
 export const Filler = styled.div<FillerProps>`
-  height: 100;
+  height: 100%;
   width: ${(props) => props.value}%;
   background-color: ${(props) => props.color};
   border-radius: inherit;

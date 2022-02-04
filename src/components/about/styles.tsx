@@ -26,11 +26,22 @@ export const AboutContainer = styled.div`
   `}
 `
 
+export const Model = styled.img`
+  width: 100%;
+
+  ${media.tablet`
+    height: 100%;
+  `}
+`;
 
 export const ModelAndSkill = styled.div`
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: 32% auto;
   grid-gap: 15px;
+
+  ${media.tablet`
+    grid-template-columns: 50% auto;
+  `}
 
   ${media.mobile`
     display: flex;
