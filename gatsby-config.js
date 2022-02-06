@@ -1,11 +1,30 @@
 module.exports = {
     siteMetadata: {
-        siteUrl: `https://www.yourdomain.tld`,
+        title: "Audi Blog's",
+        siteUrl: `https://www.audi-blog.com`,
     },
     plugins: [
         'gatsby-plugin-typescript',
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-styled-components',
-        'gatsby-plugin-offline'
+        'gatsby-plugin-offline',
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `markdown-pages`,
+                path: `${__dirname}/src/markdown`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              name: `images`,
+              path: `${__dirname}/src/images/`,
+            },
+          },
+        'gatsby-transformer-remark',
+        'gatsby-transformer-sharp',
+        'gatsby-plugin-sharp',
+        'gatsby-plugin-image',
     ]
 }

@@ -12,13 +12,13 @@ export const ProfileContainer = styled.div`
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
-  overflow: hidden;
 
 
   ${media.tablet`
     width: 40%;
+    gap: 40px
   `}
 
   ${media.mobile`
@@ -27,16 +27,11 @@ export const ProfileContainer = styled.div`
   `}
 `
 
-export const ProfilePhoto = styled.img`
+export const ProfilePhoto = styled.div`
   width: 100%;
-  height: 280px;
-  object-fit: cover;
   border-radius: 10px 10px 0px 0px;
   z-index: 9999;
-
-  ${media.tablet`
-    height: 250px;
-  `} 
+  overflow: hidden;
 `
 
 export const NameAndTitleWrapper = styled.div`

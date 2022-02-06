@@ -13,6 +13,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: row;
   gap: 40px;
+  justify-content: space-evenly;
 
   ${media.tablet`
     padding: 7% 5% 5%;
