@@ -5,7 +5,7 @@ import { media } from "../../helpers/media"
 export const AboutContainer = styled.div`
   width: 70%;
   padding: 1% 2%;
-  height: 590px;
+  height: 85vh;
   background-color: ${Color.WHITE};
   border: solid 1px gray;
   border-radius: 10px;

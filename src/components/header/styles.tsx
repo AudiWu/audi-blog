@@ -31,7 +31,7 @@ const Menu = styled.div`
       height: 65px;
 
       a {
-        font-size: ${pxToRem(24)};
+        font-size: ${pxToRem(22)};
         text-decoration: none;
         color: ${Color.WHITE};
         line-height: 65px;

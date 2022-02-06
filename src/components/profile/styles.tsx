@@ -5,7 +5,7 @@ import { pxToRem } from "../../helpers/pxToRem"
 
 export const ProfileContainer = styled.div`
   width: 30%;
-  height: 590px;
+  height: 85vh;
   padding: 0;
   background-color: ${Color.WHITE};
   border: solid 1px gray;

@@ -9,7 +9,7 @@ export const LayoutWrapper = styled.div`
 
 export const Content = styled.div`
   width: 100%;
-  padding: 7% 6% 2%;
+  padding: 6% 6% 2%;
   display: flex;
   flex-direction: row;
   gap: 40px;
