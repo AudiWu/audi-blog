@@ -16,12 +16,12 @@ export const Content = styled.div`
   justify-content: space-evenly;
 
   ${media.tablet`
-    padding: 7% 5% 5%;
+    padding: 11% 5% 1%;
     gap: 30px;
   `}
 
   ${media.mobile`
-    padding: 20% 6% 5%;
+    padding: 25% 6% 5%;
     flex-direction: column;
     gap: 20px;
   `}

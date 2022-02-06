@@ -15,7 +15,6 @@ export const ProfileContainer = styled.div`
   gap: 20px;
   align-items: center;
 
-
   ${media.tablet`
     width: 40%;
     gap: 40px
@@ -30,7 +29,6 @@ export const ProfileContainer = styled.div`
 export const ProfilePhoto = styled.div`
   width: 100%;
   border-radius: 10px 10px 0px 0px;
-  z-index: 9999;
   overflow: hidden;
 `
 
@@ -38,7 +36,7 @@ export const NameAndTitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
-`;
+`
 
 export const Name = styled.p`
   font-size: ${pxToRem(34)};
@@ -93,12 +91,11 @@ const linkCss = css`
     border: solid 1px ${Color.MALACHITE};
     color: ${Color.MALACHITE};
   }
-` 
+`
 export const Resume = styled.a`
   ${linkCss}
-`;
+`
 
 export const Contact = styled.a`
   ${linkCss}
-`;
-
+`

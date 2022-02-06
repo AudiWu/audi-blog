@@ -1,18 +1,34 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import { Navbar, Logo, Menu } from './styles';
-import { Color } from '../../enums/color';
+import React from "react"
+import { Navbar, Menu } from "./styles"
+import { LinkItem } from "./link"
+
+const datas = [
+  {
+    url: "/",
+    title: "About",
+  },
+  {
+    url: "/Experience",
+    title: "Experience",
+  },
+  {
+    url: "/Project",
+    title: "Project",
+  },
+]
 
 export const Header: React.FC<{}> = () => (
   <Navbar>
-    <Logo>MyLogo</Logo>
     <Menu>
       <ul>
-        <li><Link to="/" activeStyle={{ color: Color.MALACHITE }}>About</Link></li>
-        <li><Link to="/Experience" activeStyle={{ color: Color.MALACHITE }}>Experience</Link></li>
-        <li><Link to="/Project" activeStyle={{ color: Color.MALACHITE }}>Projects</Link></li>
-        <li><a href="#">Contact</a></li>
+        {datas.map((data, index) => (
+          <LinkItem
+            key={index}
+            url={data.url}
+            title={data.title}
+          />
+        ))}
       </ul>
     </Menu>
   </Navbar>
-);
+)
