@@ -12,5 +12,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => (
     <Particle />
     <Header />
     <Content>{children}</Content>
+    <script src="https://storage.googleapis.com/sa-widget/customer-script.js" type="text/javascript" async></script>
   </LayoutWrapper>
 )
