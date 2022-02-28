@@ -9,19 +9,19 @@ export const LayoutWrapper = styled.div`
 
 export const Content = styled.div`
   width: 100%;
-  padding: 6% 6% 2%;
+  padding: 5% 6% 2%;
   display: flex;
   flex-direction: row;
   gap: 40px;
   justify-content: space-evenly;
 
   ${media.tablet`
-    padding: 11% 5% 1%;
+    padding: 9% 5% 1%;
     gap: 30px;
   `}
 
   ${media.mobile`
-    padding: 25% 6% 5%;
+    padding: 20% 6% 5%;
     flex-direction: column;
     gap: 20px;
   `}

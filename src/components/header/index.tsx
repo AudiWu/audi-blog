@@ -15,6 +15,10 @@ const datas = [
     url: "/Project",
     title: "Project",
   },
+  {
+    url: "/Blog",
+    title: "Blog",
+  },
 ]
 
 export const Header: React.FC<{}> = () => (

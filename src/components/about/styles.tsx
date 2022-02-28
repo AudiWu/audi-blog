@@ -11,41 +11,19 @@ export const AboutContainer = styled.div`
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 15px;
   overflow-y: scroll;
 
   ${media.tablet`
     width: 60%;
     padding: 2% 2%;
+    gap: 25px;
   `}
 
   ${media.mobile`
     width: 100%;
     height: 100%;
     padding: 2% 3% 4%;
+    gap: 30px;
   `}
 `
-
-export const Model = styled.img`
-  width: 100%;
-
-  ${media.tablet`
-    height: 100%;
-  `}
-`;
-
-export const ModelAndSkill = styled.div`
-  display: grid;
-  grid-template-columns: 32% auto;
-  grid-gap: 15px;
-
-  ${media.tablet`
-    grid-template-columns: 50% auto;
-  `}
-
-  ${media.mobile`
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  `}
-`;

@@ -17,6 +17,11 @@ export const TimelineWrapper = styled.div`
     height: 90vh;
   `}
 
-  /* ${media.mobile`
-  `} */
+  ${media.mobile`
+    height: 100%;
+
+    .timeline-controls {
+      display: none !important;
+    }
+  `}
 `

@@ -1,21 +1,20 @@
-import styled from "styled-components";
-import { media } from "../../../helpers/media";
+import styled from "styled-components"
+import { media } from "../../../helpers/media"
 
 export const SkillWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-`
-
-export const ProgressWrapper = styled.div`
   display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 15px;
+  grid-template-columns: auto auto auto;
+  grid-gap: 25px;
 
-  ${media.mobile`
+  ${media.tablet`
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
   `}
-`;
 
+  ${media.mobile`
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 25px;
+  `}
+`

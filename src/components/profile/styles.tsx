@@ -12,12 +12,12 @@ export const ProfileContainer = styled.div`
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 3%;
   align-items: center;
 
   ${media.tablet`
     width: 40%;
-    gap: 40px
+    gap: 35px
   `}
 
   ${media.mobile`
@@ -58,15 +58,9 @@ export const ResumeAndContactWrapper = styled.div`
   padding: 0 2%;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   gap: 8px;
-
-  ${media.tablet`
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  `} 
 `
 
 const linkCss = css`

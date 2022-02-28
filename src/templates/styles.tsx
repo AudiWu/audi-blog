@@ -13,6 +13,17 @@ export const Details = styled.div`
     margin-bottom: 40px;
     color: ${Color.SUVA_GRAY};
   }
+
+  pre {
+    background-color: ${Color.WHITE};
+    border-radius: 5px;
+    padding: 1%;
+  }
+
+  code {
+    color: ${Color.TANGERINE};
+    font-size: 2em;
+  }
 `
 
 export const Banner = styled.div`

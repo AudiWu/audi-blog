@@ -16,7 +16,7 @@ const ProjectDetails = ({ data }) => {
         <Banner>
           <GatsbyImage
             image={featuredImg.childImageSharp.gatsbyImageData}
-            alt=""
+            alt={title}
           />
         </Banner>
         <Content dangerouslySetInnerHTML={{ __html: html }} />

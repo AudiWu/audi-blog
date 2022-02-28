@@ -35,7 +35,7 @@ export const Profile: React.FC<{}> = () => {
   return (
     <ProfileContainer>
       <ProfilePhoto>
-        <GatsbyImage image={image} alt="" style={imageStyle} />
+        <GatsbyImage image={image} alt="Profile Image" style={imageStyle} />
       </ProfilePhoto>
       <NameAndTitleWrapper>
         <Name>Audi</Name>

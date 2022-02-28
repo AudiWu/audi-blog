@@ -6,7 +6,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { Color } from "../../enums/color"
 import { media } from "../../helpers/media"
 
-const ProjectsWrapper = styled.div`
+const BlogsWrapper = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -38,7 +38,7 @@ const ProjectsWrapper = styled.div`
   `}
 `
 
-type ProjectProps = {
+type BlogsProps = {
   frontmatter: {
     slug: string
     thumb: { childImageSharp: any }
@@ -60,12 +60,12 @@ type ProjectProps = {
   id: React.Key | null | undefined
 }
 
-const Project: React.FC<{}> = () => {
+const Blog: React.FC<{}> = () => {
   const data = useStaticQuery(graphql`
-    query ProjectsPage {
+    query BlogsPage {
       allMarkdownRemark(
         sort: { order: DESC, fields: frontmatter___date }
-        filter: { fileAbsolutePath: { regex: "/markdown/project/" } }
+        filter: { fileAbsolutePath: { regex: "/markdown/blog/" } }
       ) {
         nodes {
           frontmatter {
@@ -84,28 +84,26 @@ const Project: React.FC<{}> = () => {
     }
   `)
 
-  const projects = data.allMarkdownRemark.nodes
+  const blogs = data.allMarkdownRemark.nodes
 
   return (
     <Layout>
-      <ProjectsWrapper>
-        {projects.map((project: ProjectProps) => (
-          <Link to={"/markdown/project/" + project.frontmatter.slug} key={project.id}>
+      <BlogsWrapper>
+        {blogs.map((blog: BlogsProps) => (
+          <Link to={"/markdown/blog/" + blog.frontmatter.slug} key={blog.id}>
             <div>
               <GatsbyImage
-                image={
-                  project.frontmatter.thumb.childImageSharp.gatsbyImageData
-                }
+                image={blog.frontmatter.thumb.childImageSharp.gatsbyImageData}
                 alt=""
               />
-              <h3>{project.frontmatter.title}</h3>
-              <p>{project.frontmatter.stack}</p>
+              <h3>{blog.frontmatter.title}</h3>
+              <p>{blog.frontmatter.stack}</p>
             </div>
           </Link>
         ))}
-      </ProjectsWrapper>
+      </BlogsWrapper>
     </Layout>
   )
 }
 
-export default Project
+export default Blog

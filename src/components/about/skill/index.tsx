@@ -1,49 +1,24 @@
 import React from 'react';
-import { Title } from '../../shared/title'
-import { Progress } from '../../shared/progress';
-import { SkillWrapper, ProgressWrapper } from './styles';
-import { Color } from '../../../enums/color';
+import { Item } from './item';
+import { Title } from '../../shared/title';
+import { SkillWrapper } from './styles';
 
 const data = {
-  title: 'Skill',
-  skills: [
-    {
-      title: 'JavaScript',
-      value: 80,
-      color: Color.CURIOUS_BLUE,
-    },
-    {
-      title: 'TypeScript',
-      value: 70,
-      color: Color.ROYAL,
-    },
-    {
-      title: 'Python',
-      value: 65,
-      color: Color.SCARLET,
-    },
-    {
-      title: 'Java',
-      value: 65,
-      color: Color.LIGHT_SALMON,
-    },
-    {
-      title: 'C++',
-      value: 50,
-      color: Color.PEANUT,
-    },
-    {
-      title: 'Go',
-      value: 60,
-      color: Color.TANGERINE,
-    },
-  ],
+  title: 'My Skills',
+  skill: {
+    title: "Web Development",
+    icon: "website",
+    value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id quam at enim eleifend venenatis in nec tortor. Duis consequat vitae purus in imperdiet."
+  },
 }
 
 export const Skill: React.FC<{}> = () => (
-  <SkillWrapper>
-    {data.skills.map((skill, index) => (
-      <Progress key={index} title={skill.title} value={skill.value} color={skill.color} />
-    ))}
-  </SkillWrapper>
+  <>
+    <Title value={data.title} />
+    <SkillWrapper>
+      <Item title={data.skill.title} icon={data.skill.icon} value={data.skill.value} />
+      <Item title="Responsive Website" icon="responsive" value={data.skill.value} />
+      <Item title="Problem Solver" icon="idea" value={data.skill.value} />
+    </SkillWrapper>
+  </>
 )

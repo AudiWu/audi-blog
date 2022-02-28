@@ -5,22 +5,20 @@ import { pxToRem } from "../../helpers/pxToRem"
 
 const Navbar = styled.nav`
   width: 100%;
-  height: 65px;
   position: fixed;
-  line-height: 65px;
+  line-height: 50px;
   text-align: center;
   z-index: 9999;
 `
 
 const Menu = styled.div`
   width: 100%;
-  height: 65px;
-  background-color: ${Color.DARK};
+  background-color: ${Color.DARK} ;
   padding: 0 6%;
+  opacity: 0.85;
 
   ul {
     width: 100%;
-    height: 65px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -28,14 +26,17 @@ const Menu = styled.div`
     gap: 20px;
 
     li {
-      height: 65px;
 
       a {
         font-size: ${pxToRem(22)};
         text-decoration: none;
         color: ${Color.WHITE};
-        line-height: 65px;
         text-transform: uppercase;
+
+        ${media.mobile`
+          line-height: 8vh;
+          font-size: ${pxToRem(16)}
+        `}
       }
 
       svg {
@@ -52,6 +53,7 @@ const Menu = styled.div`
     }
 
     ${media.mobile`
+        height: 8vh;
         justify-content: center;
     `}
   }

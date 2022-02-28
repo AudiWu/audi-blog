@@ -7,6 +7,7 @@ exports.createPages = async ({ graphql, actions }) => {
         nodes {
           frontmatter {
             slug
+            file
           }
         }
       }
@@ -15,7 +16,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   data.allMarkdownRemark.nodes.forEach((node) => {
     actions.createPage({
-      path: "/markdown/" + node.frontmatter.slug,
+      path: `${node.frontmatter.file}${node.frontmatter.slug}`,
       component: path.resolve("./src/templates/index.tsx"),
       context: { slug: node.frontmatter.slug },
     })
