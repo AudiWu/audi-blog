@@ -7,6 +7,7 @@ import { Color } from "../../enums/color"
 import { media } from "../../helpers/media"
 
 const BlogsWrapper = styled.div`
+  padding-top: 100px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -33,6 +34,7 @@ const BlogsWrapper = styled.div`
 
   ${media.mobile`
     display: flex;
+    padding-top: 50px;
     flex-direction: column;
     gap: 20px;
   `}

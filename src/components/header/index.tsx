@@ -8,10 +8,6 @@ const datas = [
     title: "About",
   },
   {
-    url: "/Experience",
-    title: "Experience",
-  },
-  {
     url: "/Project",
     title: "Project",
   },
@@ -26,11 +22,7 @@ export const Header: React.FC<{}> = () => (
     <Menu>
       <ul>
         {datas.map((data, index) => (
-          <LinkItem
-            key={index}
-            url={data.url}
-            title={data.title}
-          />
+          <LinkItem key={index} url={data.url} title={data.title} />
         ))}
       </ul>
     </Menu>

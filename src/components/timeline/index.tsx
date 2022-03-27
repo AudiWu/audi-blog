@@ -1,25 +1,23 @@
 import React, { useState, useEffect } from "react"
 import { Chrono } from "react-chrono"
 import data from "./data"
-import { TimelineWrapper } from "./styles"
+import {
+  Wrapper,
+  TimelineWrapper,
+  CompanyName,
+  JobTitle,
+  Achievement,
+} from "./styles"
 import { Color } from "../../enums/color"
+import { Title } from "../shared/title"
 
-export const Timeline: React.FC<{}> = () => {
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    if (window.innerWidth <= 425) {
-      setIsMobile(true)
-    }
-  }, [])
-
-  return (
+export const Timeline: React.FC<{}> = () => (
+  <Wrapper>
+    <Title value="Experiences" />
     <TimelineWrapper>
       <Chrono
         items={data}
         mode="VERTICAL"
-        slideShow={!isMobile}
-        slideItemDuration={4000}
         cardHeight={150}
         theme={{
           primary: Color.MALACHITE,
@@ -29,7 +27,34 @@ export const Timeline: React.FC<{}> = () => {
           titleColor: Color.WHITE,
           textColor: Color.DARK,
         }}
-      />
+      >
+        <div>
+          <CompanyName>SparkAmplify</CompanyName>
+          <JobTitle>Front-End Developer Intern</JobTitle>
+          <Achievement>
+            <li>
+              Enhanced the drag and drop UI/UX to become smoother to use and
+              make code readability simpler.
+            </li>
+            <li>
+              Implement a pop-up form that can be designed by the user and can
+              be auto- filled using the LinkedIn Autofill API.
+            </li>
+            <li>
+              Implement a security function to make unauthorized users can’t use
+              the feature that they don’t have access to.
+            </li>
+            <li>
+              Helping backend engineers design or fix database models,
+              controllers, and APIs.
+            </li>
+            <li>
+              Reviewing and testing team’s code to provide additional
+              perspective and catch errors.
+            </li>
+          </Achievement>
+        </div>
+      </Chrono>
     </TimelineWrapper>
-  )
-}
+  </Wrapper>
+)

@@ -1,12 +1,14 @@
-import React from 'react'
-import { TitleWrapper, Text } from './styles'
+import React from "react"
+import { TitleWrapper, Text } from "./styles"
 
 type TitleProps = {
-  value: string;
+  value: string
 }
 
 export const Title: React.FC<TitleProps> = ({ value }) => (
   <TitleWrapper>
-    <Text>{value}</Text>
+    <Text>
+      <span>{value}</span>
+    </Text>
   </TitleWrapper>
-);
+)

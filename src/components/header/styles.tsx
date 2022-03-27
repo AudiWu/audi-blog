@@ -13,9 +13,9 @@ const Navbar = styled.nav`
 
 const Menu = styled.div`
   width: 100%;
-  background-color: ${Color.DARK} ;
+  background-color: ${Color.DARK};
   padding: 0 6%;
-  opacity: 0.85;
+  opacity: 0.75;
 
   ul {
     width: 100%;
@@ -26,12 +26,12 @@ const Menu = styled.div`
     gap: 20px;
 
     li {
-
       a {
         font-size: ${pxToRem(22)};
         text-decoration: none;
         color: ${Color.WHITE};
         text-transform: uppercase;
+        line-height: 100px;
 
         ${media.mobile`
           line-height: 8vh;

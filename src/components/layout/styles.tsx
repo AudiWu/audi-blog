@@ -1,28 +1,22 @@
 import styled from "styled-components"
-import { media } from "../../helpers/media";
+import { media } from "../../helpers/media"
 
 export const LayoutWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-`;
+`
 
 export const Content = styled.div`
   width: 100%;
-  padding: 5% 6% 2%;
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  justify-content: space-evenly;
+  padding: 0px 100px;
 
   ${media.tablet`
-    padding: 9% 5% 1%;
-    gap: 30px;
+    padding: 0px 50px;
   `}
 
   ${media.mobile`
-    padding: 20% 6% 5%;
-    flex-direction: column;
-    gap: 20px;
+    width: 100%;
+    padding: 2.5vh 25px 0px;
   `}
-`;
+`

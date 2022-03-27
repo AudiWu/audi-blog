@@ -1,6 +1,7 @@
-import styled from "styled-components";
-import { pxToRem } from "../../../../helpers/pxToRem";
-import { media } from "../../../../helpers/media";
+import styled from "styled-components"
+import { pxToRem } from "../../../helpers/pxToRem"
+import { media } from "../../../helpers/media"
+import { Color } from "../../../enums/color"
 
 export const ItemWrapper = styled.div`
   display: flex;
@@ -39,15 +40,28 @@ export const DescriptionWrapper = styled.div`
   ${media.mobile`
     align-items: center;
   `}
-`;
+`
 
 export const ItemTitle = styled.h1`
+  color: ${Color.SUVA_GRAY};
   font-size: ${pxToRem(20)};
+
+  ${media.mobile`
+    font-size: ${pxToRem(18)};
+  `}
 `
 
 export const ItemDescription = styled.h2`
-  font-size: ${pxToRem(16)};
-  text-align: justify;
+  color: ${Color.WHITE};
+  font-size: ${pxToRem(18)};
+  text-align: center;
+
+  ${media.tablet`
+    text-align: justify;
+  `}
+
+  ${media.mobile`
+    font-size: ${pxToRem(16)};
+    text-align: center;
+  `}
 `
-
-

@@ -3,64 +3,110 @@ import { Color } from "../../enums/color"
 import { media } from "../../helpers/media"
 import { pxToRem } from "../../helpers/pxToRem"
 
-export const ProfileContainer = styled.div`
-  width: 30%;
-  height: 85vh;
-  padding: 0;
-  background-color: ${Color.WHITE};
-  border: solid 1px gray;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 3%;
-  align-items: center;
+const BigTextStyles = css`
+  font-size: ${pxToRem(80)};
 
   ${media.tablet`
-    width: 40%;
-    gap: 35px
+    font-size: ${pxToRem(40)};
   `}
 
   ${media.mobile`
-    width: 100%;
-    padding-bottom: 5%;
+  font-size: ${pxToRem(30)};
   `}
 `
 
-export const ProfilePhoto = styled.div`
+export const Wrapper = styled.div`
   width: 100%;
-  border-radius: 10px 10px 0px 0px;
-  overflow: hidden;
-`
-
-export const NameAndTitleWrapper = styled.div`
+  min-height: 100vh;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  justify-content: center;
+  align-items: flex-start;
 `
 
-export const Name = styled.p`
-  font-size: ${pxToRem(34)};
-  color: ${Color.DARK};
-`
-
-export const Title = styled.h1`
-  font-size: ${pxToRem(16)};
-  color: ${Color.MALACHITE};
-`
-
-export const SocialMedia = styled.div`
+export const ProfileContainer = styled.div`
+  padding: 0;
   display: flex;
   flex-direction: row;
-  gap: 8px;
+
+  ${media.mobile`
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+  `}
 `
 
-export const ResumeAndContactWrapper = styled.div`
-  padding: 0 2%;
-  width: 100%;
+export const Information = styled.div`
+  width: 70%;
+
+  ${media.mobile`
+    width: 100%;
+  `}
+`
+
+export const IntroductionText = styled.h1`
+  color: ${Color.MALACHITE};
+  font-size: ${pxToRem(16)};
+  margin-bottom: 20px;
+  word-spacing: 5px;
+`
+
+export const Name = styled.h2`
+  color: ${Color.SUVA_GRAY};
+  margin-bottom: 10px;
+  ${BigTextStyles};
+`
+
+export const Title = styled.h3`
+  color: ${Color.GALLERY};
+  margin-bottom: 20px;
+  ${BigTextStyles};
+`
+
+export const About = styled.p`
+  width: 80%;
+  color: ${Color.GALLERY};
+  font-size: ${pxToRem(20)};
+  ${media.mobile`
+    width: 100%;
+  `}
+`
+
+export const HashTags = styled.div`
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+`
+
+export const Tag = styled.p`
+  color: ${Color.MALACHITE};
+  font-size: ${pxToRem(20)};
+`
+
+export const Contact = styled.div`
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+`
+
+export const ProfilePhoto = styled.div`
+  width: 30%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 8px;
+  justify-content: center;
+
+  ${media.mobile`
+    width: 100%;
+    margin-bottom: 20px;
+  `}
+
+  img {
+    border-radius: 10px;
+  }
 `
 
 const linkCss = css`
@@ -75,7 +121,7 @@ const linkCss = css`
 
   ${media.mobile`
     width: 70%;
-  `} 
+  `}
 
   ${media.mobile`
     width: 50%;
@@ -85,11 +131,4 @@ const linkCss = css`
     border: solid 1px ${Color.MALACHITE};
     color: ${Color.MALACHITE};
   }
-`
-export const Resume = styled.a`
-  ${linkCss}
-`
-
-export const Contact = styled.a`
-  ${linkCss}
 `

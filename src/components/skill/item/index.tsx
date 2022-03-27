@@ -1,11 +1,12 @@
 import React from "react"
-import { Icon } from "../../../icon"
+import { Icon } from "../../icon"
 import {
   ItemWrapper,
   DescriptionWrapper,
   ItemTitle,
   ItemDescription,
 } from "./styles"
+import { Color } from "../../../enums/color"
 
 type ItemProps = {
   title: string
@@ -15,7 +16,7 @@ type ItemProps = {
 
 export const Item: React.FC<ItemProps> = ({ title, icon, value }) => (
   <ItemWrapper>
-    <Icon name={icon} size={80} />
+    <Icon name={icon} size={70} color={Color.WHITE} />
     <DescriptionWrapper>
       <ItemTitle>{title}</ItemTitle>
       <ItemDescription>{value}</ItemDescription>
