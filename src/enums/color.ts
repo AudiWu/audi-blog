@@ -6,7 +6,7 @@ export enum Color {
   GALLERY = '#f0f0f0',
   LIGHT_SALMON = '#ffa07a',
   MINE_SHAFT = '#3d3d3d',
-  MALACHITE = '#00FF41',
+  MALACHITE = '#1DB954',
   PEANUT = '#795C32',
   ROYAL = '#FCE205',
   SCARLET = '#FF2400',

@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
 `
 
 export const SkillWrapper = styled.div`
-  margin-top: 40px;
+  margin-top: 80px;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 50px;
@@ -29,6 +29,7 @@ export const SkillWrapper = styled.div`
   `}
 
   ${media.mobile`
+    margin-top: 60px;
     display: grid;
     grid-template-columns: auto;
     grid-gap: 30px;
@@ -45,11 +46,15 @@ export const Subtitle = styled.h2`
   color: ${Color.SUVA_GRAY};
   font-size: ${pxToRem(32)};
   text-align: center;
+
+  ${media.mobile`
+    margin-top: 60px;
+  `}
 `
 
 export const FrameworkWrapper = styled.div`
   width: 100%;
-  margin-top: 40px;
+  margin-top: 80px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -63,6 +68,7 @@ export const FrameworkWrapper = styled.div`
   `}
 
   ${media.mobile`
+    margin-top: 60px;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 20px;

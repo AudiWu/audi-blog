@@ -108,27 +108,3 @@ export const ProfilePhoto = styled.div`
     border-radius: 10px;
   }
 `
-
-const linkCss = css`
-  padding: 3% 5%;
-  font-size: ${pxToRem(20)};
-  text-decoration: none;
-  border: solid 1px ${Color.MINE_SHAFT};
-  color: ${Color.MINE_SHAFT};
-  text-align: center;
-  border-radius: 25px;
-  cursor: pointer;
-
-  ${media.mobile`
-    width: 70%;
-  `}
-
-  ${media.mobile`
-    width: 50%;
-  `} 
-
-  &:hover {
-    border: solid 1px ${Color.MALACHITE};
-    color: ${Color.MALACHITE};
-  }
-`

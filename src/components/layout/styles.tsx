@@ -17,6 +17,7 @@ export const Content = styled.div`
 
   ${media.mobile`
     width: 100%;
+    padding: 0px 50px;
     padding: 2.5vh 25px 0px;
   `}
 `

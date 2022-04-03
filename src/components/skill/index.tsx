@@ -34,12 +34,17 @@ const data = {
 }
 
 export const Skill: React.FC<{}> = () => (
-  <Wrapper>
+  <Wrapper id="skill">
     <Title value={data.title} />
     <Subtitle>{data.subtitle.skill}</Subtitle>
     <SkillWrapper>
-      {data.skills.map((skill) => (
-        <Item title={skill.title} icon={skill.icon} value={skill.value} />
+      {data.skills.map((skill, index) => (
+        <Item
+          key={`${skill.title}-${index}`}
+          title={skill.title}
+          icon={skill.icon}
+          value={skill.value}
+        />
       ))}
     </SkillWrapper>
     <Subtitle>{data.subtitle.framework}</Subtitle>

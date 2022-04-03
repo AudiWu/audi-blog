@@ -13,9 +13,8 @@ const Navbar = styled.nav`
 
 const Menu = styled.div`
   width: 100%;
-  background-color: ${Color.DARK};
+  background-color: transparent;
   padding: 0 6%;
-  opacity: 0.75;
 
   ul {
     width: 100%;
@@ -24,9 +23,20 @@ const Menu = styled.div`
     justify-content: flex-end;
     list-style: none;
     gap: 20px;
-
+    
     li {
-      a {
+      font-size: ${pxToRem(22)};
+      text-decoration: none;
+      color: ${Color.WHITE};
+      text-transform: uppercase;
+      line-height: 100px;
+      cursor: pointer;
+
+      ${media.mobile`
+        line-height: 8vh;
+        font-size: ${pxToRem(16)}
+      `}
+      /* a {
         font-size: ${pxToRem(22)};
         text-decoration: none;
         color: ${Color.WHITE};
@@ -49,7 +59,7 @@ const Menu = styled.div`
         ${media.tablet`
             fill: ${Color.MALACHITE};
         `}
-      }
+      } */
     }
 
     ${media.mobile`

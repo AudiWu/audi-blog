@@ -4,16 +4,20 @@ import { LinkItem } from "./link"
 
 const datas = [
   {
-    url: "/",
+    url: "#profile",
     title: "About",
   },
   {
-    url: "/Project",
-    title: "Project",
+    url: "#skill",
+    title: "Skill",
   },
   {
-    url: "/Blog",
-    title: "Blog",
+    url: "#experience",
+    title: "Experience",
+  },
+  {
+    url: "#project",
+    title: "Project",
   },
 ]
 

@@ -18,7 +18,7 @@ import { Color } from "../../enums/color"
 
 export const Profile: React.FC<{}> = () => {
   return (
-    <Wrapper>
+    <Wrapper id="profile">
       <ProfileContainer>
         <Information>
           <IntroductionText>Hello, my name is </IntroductionText>

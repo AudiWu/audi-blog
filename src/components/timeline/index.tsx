@@ -12,13 +12,12 @@ import { Color } from "../../enums/color"
 import { Title } from "../shared/title"
 
 export const Timeline: React.FC<{}> = () => (
-  <Wrapper>
+  <Wrapper id="experience">
     <Title value="Experiences" />
     <TimelineWrapper>
       <Chrono
         items={data}
         mode="VERTICAL"
-        cardHeight={150}
         theme={{
           primary: Color.MALACHITE,
           secondary: Color.WHITE,

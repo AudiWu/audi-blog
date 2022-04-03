@@ -6,13 +6,13 @@ import { Details, Banner, Content } from "./styles"
 
 const ProjectDetails = ({ data }) => {
   const { html } = data.markdownRemark
-  const { title, stack, featuredImg } = data.markdownRemark.frontmatter
+  const { title, stack, featuredImg, role } = data.markdownRemark.frontmatter
 
   return (
     <Layout>
       <Details>
-        <h2>{title}</h2>
-        <h3>{stack}</h3>
+        <h1>{title}</h1>
+        <h2>{role}</h2>
         <Banner>
           <GatsbyImage
             image={featuredImg.childImageSharp.gatsbyImageData}
@@ -34,6 +34,7 @@ export const query = graphql`
       frontmatter {
         stack
         title
+        role
         featuredImg {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
