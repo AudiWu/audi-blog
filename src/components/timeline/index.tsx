@@ -13,7 +13,7 @@ import { Title } from "../shared/title"
 
 export const Timeline: React.FC<{}> = () => (
   <Wrapper id="experience">
-    <Title value="Experiences" />
+    <Title value="Experience" />
     <TimelineWrapper>
       <Chrono
         items={data}

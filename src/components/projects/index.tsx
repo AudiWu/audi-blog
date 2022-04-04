@@ -33,7 +33,7 @@ export const Project: React.FC<{}> = () => {
 
   return (
     <Wrapper id="project">
-      <Title value="Projects" />
+      <Title value="Project" />
       <ProjectsWrapper>
         {projects.map((project: ProjectProps) => (
           <div key={project.id}>

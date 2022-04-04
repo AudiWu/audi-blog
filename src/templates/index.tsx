@@ -9,7 +9,7 @@ const ProjectDetails = ({ data }) => {
   const { title, stack, featuredImg, role } = data.markdownRemark.frontmatter
 
   return (
-    <Layout>
+    <Layout isProjectPage>
       <Details>
         <h1>{title}</h1>
         <h2>{role}</h2>

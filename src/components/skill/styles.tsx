@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import { media } from "../../helpers/media"
 import { Color } from "../../enums/color"
-import { pxToRem } from "../../helpers/pxToRem"
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -16,62 +15,26 @@ export const Wrapper = styled.div`
   `}
 `
 
-export const SkillWrapper = styled.div`
-  margin-top: 80px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 50px;
-
-  ${media.tablet`
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  `}
-
-  ${media.mobile`
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 30px;
-  `}
-`
-
-export const Subtitle = styled.h2`
-  width: 100%;
-  margin-top: 80px;
+export const IconWrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
   align-items: center;
-  color: ${Color.SUVA_GRAY};
-  font-size: ${pxToRem(32)};
-  text-align: center;
-
-  ${media.mobile`
-    margin-top: 60px;
-  `}
-`
+  justify-content: center;
+`;
 
 export const FrameworkWrapper = styled.div`
   width: 100%;
   margin-top: 80px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-
-  ${media.tablet`
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    gap: 20px;
-  `}
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 40px;
+  column-gap: 20px;
 
   ${media.mobile`
     margin-top: 60px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
+    grid-template-columns: auto auto;
   `}
 
   svg {
@@ -80,3 +43,7 @@ export const FrameworkWrapper = styled.div`
     }
   }
 `
+
+export const IconTitle = styled.h1`
+  color: ${Color.SUVA_GRAY};
+`;

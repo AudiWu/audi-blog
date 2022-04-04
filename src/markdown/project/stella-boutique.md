@@ -1,6 +1,6 @@
 ---
 title: Stella Boutique
-stack: React & Spring Boot
+stack: ReactJs & Spring Boot
 slug: stella-boutique
 date: 2021-01-05T00:00:00+00:00
 thumb: ../../images/thumbs/food.png

@@ -23,6 +23,10 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
+  ${media.mobile`
+    padding-top: 50px;
+  `}
 `
 
 export const ProfileContainer = styled.div`
@@ -72,25 +76,6 @@ export const About = styled.p`
   ${media.mobile`
     width: 100%;
   `}
-`
-
-export const HashTags = styled.div`
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-`
-
-export const Tag = styled.p`
-  color: ${Color.MALACHITE};
-  font-size: ${pxToRem(20)};
-`
-
-export const Contact = styled.div`
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
 `
 
 export const ProfilePhoto = styled.div`

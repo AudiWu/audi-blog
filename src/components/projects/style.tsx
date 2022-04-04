@@ -55,6 +55,6 @@ export const ProjectsWrapper = styled.div`
     margin-top: 60px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 60px;
   `}
 `

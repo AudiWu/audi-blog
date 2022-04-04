@@ -28,3 +28,4 @@ A movie search engine that returns a list of movies based on users input.
 # Project Link 🔗
 ---
 - [Github](https://drive.google.com/drive/folders/16ug2Fz3eK4I5ZeT-kR50oe2YmWAo5EQP?usp=sharing)
+- [Live Demo](https://priceless-wescoff-0a86d2.netlify.app/)

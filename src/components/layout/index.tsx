@@ -6,9 +6,10 @@ import { LayoutWrapper, Content } from "./styles"
 
 type LayoutProps = {
   children: React.ReactChild;
+  isProjectPage?: boolean;
 }
 
-export const Layout: React.FC<LayoutProps> = ({ children }) => (
+export const Layout: React.FC<LayoutProps> = ({ children, isProjectPage = false }) => (
   <LayoutWrapper>
     <Helmet 
       title={"Audi-blog"}
@@ -20,7 +21,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => (
       <html lang="en" />
     </Helmet>
     <Particle />
-    <Header />
+    <Header isProjectPage={isProjectPage} />
     <Content>{children}</Content>
   </LayoutWrapper>
 )
