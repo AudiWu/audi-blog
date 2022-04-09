@@ -2,6 +2,7 @@ import styled, { css } from "styled-components"
 import { Color } from "../../enums/color"
 import { media } from "../../helpers/media"
 import { pxToRem } from "../../helpers/pxToRem"
+import { motion } from "framer-motion"
 
 const BigTextStyles = css`
   font-size: ${pxToRem(80)};
@@ -15,7 +16,7 @@ const BigTextStyles = css`
   `}
 `
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   width: 100%;
   min-height: 100vh;
   padding: 0;
@@ -29,7 +30,7 @@ export const Wrapper = styled.div`
   `}
 `
 
-export const ProfileContainer = styled.div`
+export const ProfileContainer = styled(motion.div)`
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -42,7 +43,7 @@ export const ProfileContainer = styled.div`
   `}
 `
 
-export const Information = styled.div`
+export const Information = styled(motion.div)`
   width: 70%;
 
   ${media.mobile`
@@ -78,7 +79,7 @@ export const About = styled.p`
   `}
 `
 
-export const ProfilePhoto = styled.div`
+export const ProfilePhoto = styled(motion.div)`
   width: 30%;
   display: flex;
   flex-direction: column;

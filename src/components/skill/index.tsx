@@ -43,11 +43,17 @@ const data = {
 }
 
 export const Skill: React.FC<{}> = () => (
-  <Wrapper id="skill">
+  <Wrapper
+    id="skill"
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    viewport={{ once: true }}
+  >
     <Title value={data.title} />
     <FrameworkWrapper>
       {data.skills.map((skill, index) => (
-        <IconWrapper key={`${skill.title}-${index}`}>
+        <IconWrapper key={`${skill.title}-${index}`}
+        >
           <Icon name={skill.icon} color={Color.WHITE} size={100} />
           <IconTitle>{skill.title}</IconTitle>
         </IconWrapper>

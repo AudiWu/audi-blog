@@ -1,8 +1,9 @@
 import styled from "styled-components"
 import { media } from "../../helpers/media"
 import { Color } from "../../enums/color"
+import { motion } from "framer-motion"
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -15,7 +16,7 @@ export const Wrapper = styled.div`
   `}
 `
 
-export const IconWrapper = styled.div`
+export const IconWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -23,7 +24,7 @@ export const IconWrapper = styled.div`
   justify-content: center;
 `;
 
-export const FrameworkWrapper = styled.div`
+export const FrameworkWrapper = styled(motion.div)`
   width: 100%;
   margin-top: 80px;
   display: grid;

@@ -78,4 +78,10 @@ export const Content =styled.div`
     background-color: ${Color.WHITE};
     padding: 8px 10px;
   }
+
+  ${media.mobile`
+    h1 {
+      font-size: ${pxToRem(38)};
+    }
+  `}
 ` 

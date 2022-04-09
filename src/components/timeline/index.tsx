@@ -12,7 +12,12 @@ import { Color } from "../../enums/color"
 import { Title } from "../shared/title"
 
 export const Timeline: React.FC<{}> = () => (
-  <Wrapper id="experience">
+  <Wrapper
+    id="experience"
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    viewport={{ once: true }}
+  >
     <Title value="Experience" />
     <TimelineWrapper>
       <Chrono

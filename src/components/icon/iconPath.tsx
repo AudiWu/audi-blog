@@ -66,9 +66,9 @@ export const iconPath = {
       <g
         id="brand"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g id="git" fill="rgb(255, 255, 255)">
           <path

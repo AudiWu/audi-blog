@@ -3,8 +3,8 @@ title: Stella Boutique
 stack: ReactJs & Spring Boot
 slug: stella-boutique
 date: 2021-01-05T00:00:00+00:00
-thumb: ../../images/thumbs/food.png
-featuredImg: ../../images/featured/food-banner.png
+thumb: ../../images/thumbs/boutique-1.png
+featuredImg: ../../images/featured/boutique-2.jpg
 file: /markdown/project/
 role: 👨🏻‍💻 Backend Developer
 ---

@@ -3,8 +3,8 @@ title: Account Management System
 stack: HTML & Golang
 slug: ams
 date: 2021-02-01T00:00:00+00:00
-thumb: ../../images/thumbs/skate.png
-featuredImg: ../../images/featured/skate-banner.png
+thumb: ../../images/thumbs/ams-1.png
+featuredImg: ../../images/featured/ams-2.jpg
 file: /markdown/project/
 role: 👨🏻‍💻 Backend Developer
 ---

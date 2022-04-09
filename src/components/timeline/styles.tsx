@@ -2,8 +2,9 @@ import styled from "styled-components"
 import { Color } from "../../enums/color"
 import { media } from "../../helpers/media"
 import { pxToRem } from "../../helpers/pxToRem"
+import { motion } from "framer-motion"
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -16,7 +17,7 @@ export const Wrapper = styled.div`
   `}
 `
 
-export const TimelineWrapper = styled.div`
+export const TimelineWrapper = styled(motion.div)`
   margin-top: 80px;
 
   .timeline-item-title {

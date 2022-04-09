@@ -1,9 +1,10 @@
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import { Color } from "../../enums/color"
 import { media } from "../../helpers/media"
 import { pxToRem } from "../../helpers/pxToRem"
+import { motion } from "framer-motion"
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -16,7 +17,7 @@ export const Wrapper = styled.div`
   `}
 `
 
-export const ProfileContainer = styled.div`
+export const ProfileContainer = styled(motion.div)`
   margin-top: 80px;
   padding: 0;
   display: flex;
@@ -67,7 +68,7 @@ export const Text = styled.p`
   }
 `;
 
-export const Information = styled.div`
+export const Information = styled(motion.div)`
   width: 70%;
 
   ${media.mobile`
@@ -98,14 +99,14 @@ export const ContactText = styled.p`
   line-height: 1.5;
 `
 
-export const Contact = styled.div`
+export const Contact = styled(motion.div)`
   margin-top: 8px;
   display: flex;
   flex-direction: row;
   gap: 20px;
 `
 
-export const ProfilePhoto = styled.div`
+export const ProfilePhoto = styled(motion.div)`
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -138,7 +139,7 @@ export const Resume = styled.a`
   }
 `;
 
-export const ContactWrapper = styled.div`
+export const ContactWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
 `;

@@ -3,8 +3,8 @@ title: Timelog
 stack: ReactJs & Spring Boot
 slug: timelog
 date: 2021-01-03T00:00:00+00:00
-thumb: ../../images/thumbs/gaming.png
-featuredImg: ../../images/featured/gaming-banner.png
+thumb: ../../images/thumbs/timelog-1.png
+featuredImg: ../../images/featured/timelog-2.jpg
 file: /markdown/project/
 role: 👨🏻‍💻 Frontend Developer
 ---

@@ -16,12 +16,17 @@ import { Color } from "../../enums/color"
 import { Title } from "../shared/title"
 
 export const About: React.FC<{}> = () => (
-  <Wrapper id="about">
+  <Wrapper
+    id="about"
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    viewport={{ once: true }}
+  >
     <Title value="About" />
     <ProfileContainer>
       <ProfilePhoto>
         <StaticImage
-          src="../../images/profile.png"
+          src="../../images/profile-2.jpg"
           alt="Profile Image"
           width={300}
         />

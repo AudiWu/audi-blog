@@ -13,7 +13,12 @@ import {
 
 export const Profile: React.FC<{}> = () => {
   return (
-    <Wrapper id="profile">
+    <Wrapper
+      id="profile"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+    >
       <ProfileContainer>
         <Information>
           <IntroductionText>Hello, my name is </IntroductionText>
@@ -27,7 +32,7 @@ export const Profile: React.FC<{}> = () => {
         </Information>
         <ProfilePhoto>
           <StaticImage
-            src="../../images/profile.png"
+            src="../../images/profile-1.jpg"
             alt="Profile Image"
             width={300}
           />
