@@ -79,13 +79,6 @@ export const Header: React.FC<HeaderProps> = ({ isProjectPage, isMobile }) => {
   return (
     <Navbar show={show}>
       {menuComponent()}
-      {/* <Menu>
-        <ul>
-          {datas.map((data, index) => (
-            <LinkItem key={index} url={data.url} title={data.title} />
-          ))}
-        </ul>
-      </Menu> */}
     </Navbar>
   )
 }

@@ -17,7 +17,7 @@ export const Wrapper = styled(motion.div)`
   `}
 `
 
-export const TimelineWrapper = styled(motion.div)`
+export const TimelineWrapper = styled.div`
   margin-top: 80px;
 
   .timeline-item-title {

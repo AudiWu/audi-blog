@@ -8,6 +8,7 @@ import {
   Text,
   Contact,
   ContactText,
+  ResumeWrapper,
   Resume,
   ContactWrapper,
 } from "./styles"
@@ -92,13 +93,26 @@ export const About: React.FC<{}> = () => (
               attachLink="https://www.facebook.com/audi.putera.7"
             />
           </Contact>
-          <Resume
-            href="https://drive.google.com/drive/folders/1aJqa7tRM84w-wRLeapfs8aZ-rrnB0QFf?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Resume
-          </Resume>
+          <ResumeWrapper>
+            <Resume
+              href="./english.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
+              Resume
+            </Resume>
+            <Resume
+              href="./chinese.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
+              履歷
+            </Resume>
+
+
+          </ResumeWrapper>
         </ContactWrapper>
       </Information>
     </ProfileContainer>

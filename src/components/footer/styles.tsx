@@ -1,6 +1,5 @@
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import { Color } from "../../enums/color"
-import { media } from "../../helpers/media"
 import { pxToRem } from "../../helpers/pxToRem"
 
 export const Footer = styled.footer`

@@ -30,7 +30,7 @@ export const Wrapper = styled(motion.div)`
   `}
 `
 
-export const ProfileContainer = styled(motion.div)`
+export const ProfileContainer = styled.div`
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -43,7 +43,7 @@ export const ProfileContainer = styled(motion.div)`
   `}
 `
 
-export const Information = styled(motion.div)`
+export const Information = styled.div`
   width: 70%;
 
   ${media.mobile`
@@ -79,7 +79,7 @@ export const About = styled.p`
   `}
 `
 
-export const ProfilePhoto = styled(motion.div)`
+export const ProfilePhoto = styled.div`
   width: 30%;
   display: flex;
   flex-direction: column;

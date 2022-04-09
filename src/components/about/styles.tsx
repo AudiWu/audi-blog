@@ -17,7 +17,7 @@ export const Wrapper = styled(motion.div)`
   `}
 `
 
-export const ProfileContainer = styled(motion.div)`
+export const ProfileContainer = styled.div`
   margin-top: 80px;
   padding: 0;
   display: flex;
@@ -68,7 +68,7 @@ export const Text = styled.p`
   }
 `;
 
-export const Information = styled(motion.div)`
+export const Information = styled.div`
   width: 70%;
 
   ${media.mobile`
@@ -99,14 +99,14 @@ export const ContactText = styled.p`
   line-height: 1.5;
 `
 
-export const Contact = styled(motion.div)`
+export const Contact = styled.div`
   margin-top: 8px;
   display: flex;
   flex-direction: row;
   gap: 20px;
 `
 
-export const ProfilePhoto = styled(motion.div)`
+export const ProfilePhoto = styled.div`
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -123,8 +123,14 @@ export const ProfilePhoto = styled(motion.div)`
   }
 `
 
-export const Resume = styled.a`
+export const ResumeWrapper =  styled.div`
   margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+`;
+
+export const Resume = styled.a`
   width: 100px;
   border-radius: 10px;
   padding: 8px 10px;
@@ -139,7 +145,7 @@ export const Resume = styled.a`
   }
 `;
 
-export const ContactWrapper = styled(motion.div)`
+export const ContactWrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;

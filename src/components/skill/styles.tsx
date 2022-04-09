@@ -16,7 +16,7 @@ export const Wrapper = styled(motion.div)`
   `}
 `
 
-export const IconWrapper = styled(motion.div)`
+export const IconWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -24,7 +24,7 @@ export const IconWrapper = styled(motion.div)`
   justify-content: center;
 `;
 
-export const FrameworkWrapper = styled(motion.div)`
+export const FrameworkWrapper = styled.div`
   width: 100%;
   margin-top: 80px;
   display: grid;
