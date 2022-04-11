@@ -1,6 +1,6 @@
 ---
 title: OMDB
-stack: ReactJs & ExpressJs
+stack: ReactJs
 slug: omdb
 date: 2021-01-18T00:00:00+00:00
 thumb: ../../images/thumbs/omdb-1.jpg
