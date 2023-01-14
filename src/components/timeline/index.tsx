@@ -58,6 +58,20 @@ export const Timeline: React.FC<{}> = () => (
             </li>
           </Achievement>
         </div>
+        <div>
+          <CompanyName>Funpodium</CompanyName>
+          <JobTitle>React Developer</JobTitle>
+          <Achievement>
+            <li>
+              Introduce and implement a typesafe api using zod library and
+              react-query.
+            </li>
+            <li>
+              Implement a prompt modal to warn user before leaving web page with
+              unsaved changes.
+            </li>
+          </Achievement>
+        </div>
       </Chrono>
     </TimelineWrapper>
   </Wrapper>
